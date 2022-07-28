@@ -27,4 +27,5 @@ elif menu == 2:
 	elif choice == 2:
 		print("The angle between the plane and the line is:", str( np.arcsin( round((a @ b) / ( (sum([x**2 for x in a]) ** 0.5) * (sum([x**2 for x in b]) ** 0.5) ), 3)) ), "in Radians")
 	else:
-		pass
+		print("The angle between the 2 planes are:", str( np.arccos( round((a @ b) / ( (sum([x**2 for x in a]) ** 0.5) * (sum([x**2 for x in b]) ** 0.5) ), 3) )), "in Radians")
+		
